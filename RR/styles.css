@@ -1,0 +1,71 @@
+body {
+    background-color: #152740;
+}
+
+.container {
+    width: 750px;
+    height: 430px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.image {
+    width: 350px;
+    height: 430px;
+    background-image: url('img/image.jpg');
+    background-size: cover;
+    /* Масштабування зображення, щоб покрити весь div */
+    background-repeat: no-repeat;
+    /* Заборона повторення зображення */
+    /*background-position: right; /* Центрування зображення */
+}
+
+.info {
+    width: 350px;
+    height: 430px;
+}
+
+.logo {
+    width: 61px;
+    margin-top: -15px;
+}
+
+.text {
+    color: white;
+    font-size: 16px;
+}
+
+span {
+    color: yellow;
+    font-size: 20px;
+}
+
+p {
+    margin-bottom: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    background-color: yellow;
+    color: #152740;
+    width: 160px;
+    cursor: pointer;
+}
+
+.link {
+    padding: 20px 40px;
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        height: 100vh;
+    }
+}
